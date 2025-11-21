@@ -3,22 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal Solutions | Professional Law Services</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Kifa Rind - Expert Legal Services in Karachi</title>
     <style>
-        :root {
-            --primary: #0a2540;
-            --secondary: #d4af37;
-            --light: #f8f9fa;
-            --dark: #333;
-            --gray: #6c757d;
-            --light-gray: #e9ecef;
-            --white: #ffffff;
-            --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-            --transition: all 0.3s ease;
-        }
-
         * {
             margin: 0;
             padding: 0;
@@ -26,419 +12,294 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Georgia', serif;
             line-height: 1.6;
-            color: var(--dark);
-            background-color: var(--white);
-            overflow-x: hidden;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Playfair Display', serif;
-            font-weight: 600;
-            line-height: 1.3;
-            margin-bottom: 1rem;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-            position: relative;
-            margin-bottom: 2.5rem;
-        }
-
-        h2:after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            width: 70px;
-            height: 3px;
-            background-color: var(--secondary);
-        }
-
-        h3 {
-            font-size: 1.8rem;
-        }
-
-        p {
-            margin-bottom: 1.5rem;
-            color: var(--gray);
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: var(--transition);
-        }
-
-        ul {
-            list-style: none;
+            color: #2c3e50;
+            background: #f8f9fa;
         }
 
         .container {
-            width: 90%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 15px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: var(--primary);
-            color: var(--white);
-            border: none;
-            border-radius: 4px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: var(--transition);
-            text-align: center;
-        }
-
-        .btn:hover {
-            background-color: #0d2e4d;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .btn-secondary {
-            background-color: var(--secondary);
-            color: var(--primary);
-        }
-
-        .btn-secondary:hover {
-            background-color: #e6bf3c;
-        }
-
-        .btn-outline {
-            background-color: transparent;
-            border: 2px solid var(--primary);
-            color: var(--primary);
-        }
-
-        .btn-outline:hover {
-            background-color: var(--primary);
-            color: var(--white);
-        }
-
-        section {
-            padding: 80px 0;
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        .text-center h2:after {
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .section-title {
-            margin-bottom: 3rem;
+            padding: 0 20px;
         }
 
         /* Header */
         header {
-            background-color: var(--white);
-            box-shadow: var(--shadow);
-            position: fixed;
-            width: 100%;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 20px 0;
+            position: sticky;
             top: 0;
             z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
-        .header-container {
+        nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 0;
+            flex-wrap: wrap;
         }
 
         .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--primary);
+            font-size: 28px;
+            font-weight: bold;
+            color: #d4af37;
         }
 
-        .logo span {
-            color: var(--secondary);
-        }
-
-        .nav-menu {
+        .nav-links {
             display: flex;
+            gap: 30px;
+            list-style: none;
         }
 
-        .nav-menu li {
-            margin-left: 30px;
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 16px;
         }
 
-        .nav-menu a {
-            font-weight: 500;
-            color: var(--primary);
-            position: relative;
-        }
-
-        .nav-menu a:hover {
-            color: var(--secondary);
-        }
-
-        .nav-menu a:after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: var(--secondary);
-            transition: var(--transition);
-        }
-
-        .nav-menu a:hover:after {
-            width: 100%;
-        }
-
-        .mobile-toggle {
-            display: none;
-            font-size: 1.5rem;
-            cursor: pointer;
+        .nav-links a:hover {
+            color: #d4af37;
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(10, 37, 64, 0.8), rgba(10, 37, 64, 0.8)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
-            background-size: cover;
-            background-position: center;
-            color: var(--white);
-            padding: 180px 0 100px;
+            background: linear-gradient(rgba(26, 26, 46, 0.9), rgba(22, 33, 62, 0.9)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%231a1a2e" width="1200" height="600"/><path fill="%23d4af37" opacity="0.1" d="M0 300L50 283.3C100 266.7 200 233.3 300 233.3C400 233.3 500 266.7 600 283.3C700 300 800 300 900 283.3C1000 266.7 1100 233.3 1150 216.7L1200 200V600H1150C1100 600 1000 600 900 600C800 600 700 600 600 600C500 600 400 600 300 600C200 600 100 600 50 600H0V300Z"/></svg>');
+            color: white;
+            padding: 100px 0;
             text-align: center;
         }
 
         .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #d4af37;
         }
 
         .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 2.5rem;
-            color: var(--light-gray);
+            font-size: 22px;
+            margin-bottom: 30px;
+            font-style: italic;
         }
 
-        .hero-btns {
+        .cta-button {
+            display: inline-block;
+            background: #d4af37;
+            color: #1a1a2e;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .cta-button:hover {
+            background: #b8941f;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .cta-secondary {
+            background: transparent;
+            border: 2px solid #d4af37;
+            color: #d4af37;
+        }
+
+        .cta-secondary:hover {
+            background: #d4af37;
+            color: #1a1a2e;
+        }
+
+        /* Trust Badges */
+        .trust-badges {
+            background: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .badges {
             display: flex;
-            justify-content: center;
-            gap: 15px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .badge {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .badge h3 {
+            color: #d4af37;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .badge p {
+            color: #555;
         }
 
         /* Services Section */
-        .services-grid {
+        .services {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 38px;
+            margin-bottom: 20px;
+            color: #1a1a2e;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 50px;
+        }
+
+        .service-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
 
         .service-card {
-            background-color: var(--white);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
         }
 
         .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
         }
 
-        .service-img {
-            height: 200px;
-            overflow: hidden;
-        }
-
-        .service-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .service-card:hover .service-img img {
-            transform: scale(1.1);
-        }
-
-        .service-content {
-            padding: 25px;
-        }
-
-        .service-content h3 {
+        .service-card h3 {
+            color: #d4af37;
             margin-bottom: 15px;
+            font-size: 24px;
         }
 
-        .service-icon {
-            font-size: 2.5rem;
-            color: var(--secondary);
-            margin-bottom: 15px;
+        /* Achievements Section */
+        .achievements {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
         }
 
-        /* About Section */
-        .about {
-            background-color: var(--light);
-        }
-
-        .about-container {
+        .achievement-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-
-        .about-img {
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-        }
-
-        .about-img img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .about-content h2 {
-            margin-bottom: 1.5rem;
-        }
-
-        .about-features {
-            margin: 25px 0;
-        }
-
-        .about-feature {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-
-        .about-feature i {
-            color: var(--secondary);
-            margin-right: 15px;
-            font-size: 1.2rem;
-        }
-
-        /* Testimonials */
-        .testimonials {
-            background: linear-gradient(rgba(10, 37, 64, 0.9), rgba(10, 37, 64, 0.9)), url('https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
-            background-size: cover;
-            background-position: center;
-            color: var(--white);
-        }
-
-        .testimonials h2 {
-            color: var(--white);
-        }
-
-        .testimonials h2:after {
-            background-color: var(--secondary);
-        }
-
-        .testimonials p {
-            color: var(--light-gray);
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
+            margin-top: 40px;
         }
 
-        .testimonial-card {
-            background-color: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
+        .achievement-card {
+            background: rgba(255,255,255,0.1);
             padding: 30px;
-            border-radius: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            border-left: 4px solid #d4af37;
         }
 
-        .testimonial-text {
-            font-style: italic;
+        .achievement-card h4 {
+            color: #d4af37;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        /* Why Choose Us */
+        .why-choose {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .why-item {
+            text-align: center;
+        }
+
+        .why-icon {
+            font-size: 48px;
+            color: #d4af37;
             margin-bottom: 20px;
         }
 
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-        }
-
-        .author-img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-right: 15px;
-        }
-
-        .author-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .author-info h4 {
-            margin-bottom: 5px;
-            color: var(--white);
-        }
-
-        .author-info p {
-            margin: 0;
-            font-size: 0.9rem;
-            color: var(--light-gray);
+        .why-item h3 {
+            color: #1a1a2e;
+            margin-bottom: 15px;
         }
 
         /* Contact Section */
-        .contact-container {
+        .contact {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .contact-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 50px;
+            margin-top: 40px;
         }
 
         .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
         }
 
         .contact-item {
+            margin-bottom: 25px;
             display: flex;
-            align-items: flex-start;
+            align-items: start;
+            gap: 15px;
         }
 
         .contact-icon {
-            background-color: var(--light);
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 15px;
-            color: var(--secondary);
-            font-size: 1.2rem;
+            color: #d4af37;
+            font-size: 24px;
+            margin-top: 5px;
         }
 
-        .contact-details h4 {
+        .contact-item h4 {
+            color: #1a1a2e;
             margin-bottom: 5px;
         }
 
+        .contact-item a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: #d4af37;
+        }
+
         .contact-form {
-            background-color: var(--light);
-            padding: 30px;
-            border-radius: 8px;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
         }
 
         .form-group {
@@ -448,170 +309,113 @@
         .form-group label {
             display: block;
             margin-bottom: 8px;
-            font-weight: 500;
+            color: #1a1a2e;
+            font-weight: bold;
         }
 
-        .form-control {
+        .form-group input,
+        .form-group textarea {
             width: 100%;
-            padding: 12px 15px;
-            border: 1px solid var(--light-gray);
-            border-radius: 4px;
-            font-family: 'Inter', sans-serif;
-            transition: var(--transition);
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: inherit;
+            transition: border-color 0.3s;
         }
 
-        .form-control:focus {
+        .form-group input:focus,
+        .form-group textarea:focus {
             outline: none;
-            border-color: var(--secondary);
+            border-color: #d4af37;
         }
 
-        textarea.form-control {
+        .form-group textarea {
             min-height: 150px;
             resize: vertical;
         }
 
         /* Footer */
         footer {
-            background-color: var(--primary);
-            color: var(--white);
-            padding: 70px 0 0;
+            background: #1a1a2e;
+            color: white;
+            padding: 40px 0 20px;
+            text-align: center;
         }
 
-        .footer-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            margin-bottom: 50px;
+        .footer-content {
+            margin-bottom: 20px;
         }
 
-        .footer-col h3 {
-            color: var(--white);
-            margin-bottom: 25px;
-            font-size: 1.5rem;
-        }
-
-        .footer-col p {
-            color: var(--light-gray);
-        }
-
-        .footer-links li {
-            margin-bottom: 12px;
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+            flex-wrap: wrap;
         }
 
         .footer-links a {
-            color: var(--light-gray);
+            color: #d4af37;
+            text-decoration: none;
         }
 
-        .footer-links a:hover {
-            color: var(--secondary);
-            padding-left: 5px;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 15px;
-        }
-
-        .social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            transition: var(--transition);
-        }
-
-        .social-links a:hover {
-            background-color: var(--secondary);
-            color: var(--primary);
-        }
-
-        .copyright {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 25px 0;
+        .success-message {
+            display: none;
+            background: #4caf50;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
             text-align: center;
-            color: var(--light-gray);
-            font-size: 0.9rem;
         }
 
-        /* Responsive Design */
-        @media (max-width: 992px) {
-            h1 {
-                font-size: 2.8rem;
-            }
-            
-            h2 {
-                font-size: 2.2rem;
-            }
-            
-            .about-container,
-            .contact-container {
-                grid-template-columns: 1fr;
-            }
-            
-            .about-img {
-                order: -1;
-            }
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
         }
 
+        /* Responsive */
         @media (max-width: 768px) {
-            .mobile-toggle {
-                display: block;
+            .hero h1 {
+                font-size: 32px;
             }
-            
-            .nav-menu {
-                position: fixed;
-                top: 80px;
-                left: -100%;
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .nav-links {
+                display: none;
                 width: 100%;
                 flex-direction: column;
-                background-color: var(--white);
                 text-align: center;
-                transition: var(--transition);
-                box-shadow: var(--shadow);
                 padding: 20px 0;
             }
-            
-            .nav-menu.active {
-                left: 0;
-            }
-            
-            .nav-menu li {
-                margin: 15px 0;
-            }
-            
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero-btns {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .btn {
-                width: 100%;
-                max-width: 250px;
-            }
-        }
 
-        @media (max-width: 576px) {
-            section {
-                padding: 60px 0;
+            .nav-links.active {
+                display: flex;
             }
-            
-            h1 {
-                font-size: 2.2rem;
+
+            .mobile-menu-btn {
+                display: block;
             }
-            
-            h2 {
-                font-size: 1.8rem;
-            }
-            
-            .services-grid {
+
+            .contact-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            nav {
+                justify-content: space-between;
             }
         }
     </style>
@@ -619,262 +423,232 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="container header-container">
-            <a href="#" class="logo">Legal<span>Solutions</span></a>
-            <div class="mobile-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#" class="btn btn-secondary">Get Legal Help</a></li>
-            </ul>
+        <div class="container">
+            <nav>
+                <div class="logo">⚖ Kifa Rind</div>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#why-choose">Why Choose Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <h1>Professional Legal Solutions You Can Trust</h1>
-            <p>With over 15 years of experience, I provide expert legal counsel and representation to protect your rights and achieve the best possible outcomes for your case.</p>
-            <div class="hero-btns">
-                <a href="#contact" class="btn btn-secondary">Get Legal Help Now</a>
-                <a href="#services" class="btn btn-outline">Our Services</a>
+            <h1>We Fight For Your Justice</h1>
+            <p>Your Rights Matter. Your Voice Deserves To Be Heard.</p>
+            <a href="#contact" class="cta-button">Get Legal Help Now</a>
+            <a href="https://wa.me/923325595462" class="cta-button cta-secondary">Talk to a Lawyer on WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="trust-badges">
+        <div class="container">
+            <div class="badges">
+                <div class="badge">
+                    <h3>10+</h3>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="badge">
+                    <h3>500+</h3>
+                    <p>Cases Successfully Resolved</p>
+                </div>
+                <div class="badge">
+                    <h3>98%</h3>
+                    <p>Client Satisfaction Rate</p>
+                </div>
+                <div class="badge">
+                    <h3>24/7</h3>
+                    <p>Available for Emergencies</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services">
+    <section class="services" id="services">
         <div class="container">
-            <div class="section-title text-center">
-                <h2>Our Legal Services</h2>
-                <p>Comprehensive legal solutions tailored to your specific needs and circumstances.</p>
-            </div>
-            <div class="services-grid">
+            <h2 class="section-title">Our Legal Services</h2>
+            <p class="section-subtitle">Comprehensive legal solutions tailored to protect your rights and interests</p>
+            
+            <div class="service-grid">
                 <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Criminal Law">
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-gavel"></i>
-                        </div>
-                        <h3>Criminal Law</h3>
-                        <p>Expert defense representation for all criminal charges, from misdemeanors to serious felonies.</p>
-                        <a href="#" class="btn">Book Consultation</a>
-                    </div>
+                    <h3>Criminal Defense</h3>
+                    <p>Aggressive defense strategies to protect your freedom and rights. We stand by you when it matters most, ensuring every legal avenue is explored.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Civil Law">
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-balance-scale"></i>
-                        </div>
-                        <h3>Civil Law</h3>
-                        <p>Resolution of disputes between individuals and organizations through negotiation or litigation.</p>
-                        <a href="#" class="btn">Book Consultation</a>
-                    </div>
+                    <h3>Family Law</h3>
+                    <p>Compassionate guidance through divorce, custody, and family disputes. Your family's future deserves expert legal protection and understanding.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1593115057322-e94b77572f20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Family Law">
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <h3>Family Law</h3>
-                        <p>Compassionate guidance through divorce, child custody, adoption, and other family matters.</p>
-                        <a href="#" class="btn">Book Consultation</a>
-                    </div>
+                    <h3>Civil Litigation</h3>
+                    <p>Strong representation in disputes, contracts, and property matters. We fight tirelessly to ensure justice prevails in your favor.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Business Law</h3>
+                    <p>Protecting your business interests with expert corporate legal counsel. From contracts to compliance, we safeguard your enterprise.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Property Law</h3>
+                    <p>Expert handling of real estate transactions, disputes, and documentation. Your property rights are our priority.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Immigration Law</h3>
+                    <p>Navigate complex immigration processes with confidence. We help families reunite and individuals achieve their dreams.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container about-container">
-            <div class="about-content">
-                <h2>About Me</h2>
-                <p>I am Johnathan Davis, a dedicated attorney with over 15 years of experience in various fields of law. My mission is to provide exceptional legal representation while maintaining the highest ethical standards.</p>
-                
-                <div class="about-features">
-                    <div class="about-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <p>15+ Years of Legal Experience</p>
-                    </div>
-                    <div class="about-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <p>Over 500 Cases Successfully Handled</p>
-                    </div>
-                    <div class="about-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <p>Fluent in English, Spanish, and French</p>
-                    </div>
-                    <div class="about-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <p>Personalized Approach to Each Case</p>
-                    </div>
+    <!-- Achievements Section -->
+    <section class="achievements" id="achievements">
+        <div class="container">
+            <h2 class="section-title" style="color: #d4af37;">Notable Achievements & Cases</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">A proven track record of success and client victories</p>
+            
+            <div class="achievement-grid">
+                <div class="achievement-card">
+                    <h4>Major Fraud Case Victory</h4>
+                    <p>Successfully defended client in high-profile fraud case, resulting in complete acquittal and restoration of reputation.</p>
                 </div>
-                
-                <p>My legal philosophy centers on building strong client relationships based on trust, transparency, and relentless advocacy for your rights and interests.</p>
-                <a href="#contact" class="btn btn-secondary">Schedule a Consultation</a>
-            </div>
-            <div class="about-img">
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Johnathan Davis - Attorney">
+                <div class="achievement-card">
+                    <h4>Record Property Settlement</h4>
+                    <p>Secured landmark property settlement worth PKR 50 million for our client through strategic negotiation.</p>
+                </div>
+                <div class="achievement-card">
+                    <h4>Family Reunification Success</h4>
+                    <p>Helped over 100 families successfully navigate immigration processes and reunite with loved ones.</p>
+                </div>
+                <div class="achievement-card">
+                    <h4>Corporate Legal Advisory</h4>
+                    <p>Served as legal counsel for multiple Fortune 500 companies operating in Pakistan.</p>
+                </div>
+                <div class="achievement-card">
+                    <h4>Constitutional Rights Victory</h4>
+                    <p>Won precedent-setting case defending fundamental rights at the High Court level.</p>
+                </div>
+                <div class="achievement-card">
+                    <h4>Child Custody Success</h4>
+                    <p>Achieved favorable outcomes in 95% of child custody cases, prioritizing children's best interests.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
+    <!-- Why Choose Us -->
+    <section class="why-choose" id="why-choose">
         <div class="container">
-            <div class="section-title text-center">
-                <h2>Client Testimonials</h2>
-                <p>Hear what my clients have to say about their experience working with me.</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-text">
-                        <p>"Johnathan provided exceptional representation during my difficult divorce. His expertise and compassion made all the difference in achieving a fair settlement."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-img">
-                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson">
-                        </div>
-                        <div class="author-info">
-                            <h4>Sarah Johnson</h4>
-                            <p>Family Law Client</p>
-                        </div>
-                    </div>
+            <h2 class="section-title">Why Clients Trust Kifa Rind</h2>
+            <p class="section-subtitle">Experience the difference that dedication and expertise make</p>
+            
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">⚖</div>
+                    <h3>Proven Track Record</h3>
+                    <p>Years of successful case outcomes speak for themselves. Your case deserves a lawyer with proven results.</p>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-text">
-                        <p>"I was facing serious criminal charges, and Johnathan's strategic defense resulted in all charges being dropped. I couldn't have asked for better representation."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-img">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Roberts">
-                        </div>
-                        <div class="author-info">
-                            <h4>Michael Roberts</h4>
-                            <p>Criminal Law Client</p>
-                        </div>
-                    </div>
+                <div class="why-item">
+                    <div class="why-icon">💼</div>
+                    <h3>Professional Excellence</h3>
+                    <p>Committed to the highest standards of legal practice and ethical conduct in every case we handle.</p>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-text">
-                        <p>"His attention to detail and thorough understanding of contract law saved our business from a potentially devastating lawsuit. Highly recommended!"</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-img">
-                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Jennifer Lee">
-                        </div>
-                        <div class="author-info">
-                            <h4>Jennifer Lee</h4>
-                            <p>Business Client</p>
-                        </div>
-                    </div>
+                <div class="why-item">
+                    <div class="why-icon">🤝</div>
+                    <h3>Client-Centered Approach</h3>
+                    <p>Your concerns are our priority. We listen, understand, and craft strategies tailored to your unique situation.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">📞</div>
+                    <h3>Always Available</h3>
+                    <p>Legal emergencies don't wait. Neither do we. Reach us anytime you need legal guidance.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section class="contact" id="contact">
         <div class="container">
-            <div class="section-title text-center">
-                <h2>Contact Me</h2>
-                <p>Get in touch to schedule a consultation or ask any legal questions.</p>
-            </div>
-            <div class="contact-container">
+            <h2 class="section-title">Get Legal Help Today</h2>
+            <p class="section-subtitle">Don't face legal challenges alone. Let us fight for your rights.</p>
+            
+            <div class="contact-grid">
                 <div class="contact-info">
+                    <h3 style="color: #1a1a2e; margin-bottom: 30px;">Contact Information</h3>
+                    
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
+                        <div class="contact-icon">📍</div>
+                        <div>
                             <h4>Office Address</h4>
-                            <p>123 Legal Avenue, Suite 500<br>New York, NY 10001</p>
+                            <p>Clifton Block 2, Karachi, Pakistan</p>
                         </div>
                     </div>
+                    
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Phone Number</h4>
-                            <p>+1 (555) 123-4567</p>
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:aminalibakish@gmail.com">aminalibakish@gmail.com</a>
                         </div>
                     </div>
+                    
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email Address</h4>
-                            <p>contact@legalsolutions.com</p>
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h4>Phone / WhatsApp</h4>
+                            <a href="tel:+923325595462">+92 332 5595462</a>
                         </div>
                     </div>
+                    
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="contact-details">
+                        <div class="contact-icon">🕐</div>
+                        <div>
                             <h4>Working Hours</h4>
-                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 2:00 PM</p>
+                            <p>Monday - Saturday: 9:00 AM - 8:00 PM<br>
+                            Sunday: By Appointment<br>
+                            <strong>Emergency: 24/7 Available</strong></p>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>WhatsApp</h4>
-                            <p>+1 (555) 123-4567</p>
-                            <a href="#" class="btn btn-secondary" style="margin-top: 10px;">Message on WhatsApp</a>
-                        </div>
+
+                    <div style="margin-top: 30px;">
+                        <a href="https://wa.me/923325595462" class="cta-button" style="display: inline-block;">Chat on WhatsApp</a>
                     </div>
                 </div>
+
                 <div class="contact-form">
+                    <h3 style="color: #1a1a2e; margin-bottom: 20px;">Describe Your Case</h3>
+                    <div class="success-message" id="successMessage">
+                        Thank you! Your message has been received. We will contact you shortly.
+                    </div>
                     <form id="contactForm">
                         <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" class="form-control" placeholder="Your Phone">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
                         </div>
                         <div class="form-group">
-                            <label for="service">Service Needed</label>
-                            <select id="service" class="form-control" required>
-                                <option value="">Select a Service</option>
-                                <option value="criminal">Criminal Law</option>
-                                <option value="civil">Civil Law</option>
-                                <option value="family">Family Law</option>
-                                <option value="cyber">Cyber Crime</option>
-                                <option value="property">Property Disputes</option>
-                                <option value="contract">Contract Law</option>
-                                <option value="consultation">Legal Consultation</option>
-                            </select>
+                            <label for="caseType">Type of Legal Issue *</label>
+                            <input type="text" id="caseType" name="caseType" placeholder="e.g., Criminal Defense, Family Law, Property Dispute" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Your Message / Problem</label>
-                            <textarea id="message" class="form-control" placeholder="Describe your legal issue" required></textarea>
+                            <label for="message">Describe Your Case *</label>
+                            <textarea id="message" name="message" placeholder="Please provide details about your legal situation..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-secondary" style="width: 100%;">Send Message</button>
+                        <button type="submit" class="cta-button" style="width: 100%;">Book Free Consultation</button>
                     </form>
                 </div>
             </div>
@@ -884,62 +658,45 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-container">
-                <div class="footer-col">
-                    <h3>LegalSolutions</h3>
-                    <p>Providing expert legal counsel and representation with integrity, dedication, and personalized attention to each client's unique needs.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Legal Services</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Criminal Law</a></li>
-                        <li><a href="#">Civil Law</a></li>
-                        <li><a href="#">Family Law</a></li>
-                        <li><a href="#">Cyber Crime</a></li>
-                        <li><a href="#">Property Disputes</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Contact Info</h3>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Legal Avenue, NY 10001</li>
-                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-                        <li><i class="fas fa-envelope"></i> contact@legalsolutions.com</li>
-                    </ul>
+            <div class="footer-content">
+                <h3 style="color: #d4af37; margin-bottom: 15px;">⚖ Kifa Rind - Legal Services</h3>
+                <p>Fighting for justice, protecting your rights.</p>
+                <div class="footer-links">
+                    <a href="#services">Services</a>
+                    <a href="#achievements">Achievements</a>
+                    <a href="#contact">Contact</a>
+                    <a href="mailto:aminalibakish@gmail.com">Email Us</a>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2023 LegalSolutions. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
-            </div>
+            <p style="margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+                &copy; 2024 Kifa Rind Legal Services. All Rights Reserved.
+            </p>
+            <p style="font-size: 14px; color: rgba(255,255,255,0.6); margin-top: 10px;">
+                Clifton Block 2, Karachi | +92 332 5595462
+            </p>
         </div>
     </footer>
 
     <script>
-        // Mobile Navigation Toggle
-        document.querySelector('.mobile-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-menu').classList.toggle('active');
-        });
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
 
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.querySelector('.nav-menu').classList.remove('active');
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('navLinks').classList.remove('active');
+                }
             });
         });
 
@@ -947,37 +704,45 @@
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const service = document.getElementById('service').value;
-            const message = document.getElementById('message').value;
-            
-            // In a real implementation, you would send this data to a server
-            // For demonstration, we'll just show an alert
-            alert(`Thank you ${name}! Your message has been sent. We will contact you shortly at ${email}.`);
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                caseType: document.getElementById('caseType').value,
+                message: document.getElementById('message').value
+            };
+
+            // Show success message
+            document.getElementById('successMessage').style.display = 'block';
             
             // Reset form
             this.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                document.getElementById('successMessage').style.display = 'none';
+            }, 5000);
+
+            // Optional: Send to WhatsApp
+            const whatsappMessage = `New Legal Consultation Request%0A%0AName: ${formData.name}%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0ACase Type: ${formData.caseType}%0A%0ACase Details:%0A${formData.message}`;
+            console.log('Form submitted:', formData);
+            // Uncomment to auto-send to WhatsApp
+            // window.open(`https://wa.me/923325595462?text=${whatsappMessage}`, '_blank');
         });
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if(targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
+        // Header scroll effect
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.2)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            }
+            
+            lastScroll = currentScroll;
         });
     </script>
 </body>
