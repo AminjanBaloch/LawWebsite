@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kifa Rind - Expert Legal Services in Karachi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #1a1a2e;
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d4af37;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #d4af37;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #2d3561 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #d4af37;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #d4af37;
+            color: #1a1a2e;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .cta-button:hover {
+            background: #b8941f;
+            transform: translateY(-2px);
+        }
+
+        .cta-secondary {
+            background: transparent;
+            border: 2px solid #d4af37;
+            color: #d4af37;
+        }
+
+        .cta-secondary:hover {
+            background: #d4af37;
+            color: #1a1a2e;
+        }
+
+        .trust-badges {
+            background: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .badges {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .badge {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .badge h3 {
+            color: #d4af37;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .badge p {
+            color: #555;
+        }
+
+        .services {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #1a1a2e;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            color: #d4af37;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .achievements {
+            padding: 60px 0;
+            background: #1a1a2e;
+            color: white;
+        }
+
+        .achievement-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .achievement-card {
+            background: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #d4af37;
+        }
+
+        .achievement-card h4 {
+            color: #d4af37;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .why-choose {
+            padding: 60px 0;
+            background: white;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .why-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .why-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .why-item h3 {
+            color: #1a1a2e;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+
+        .contact-item {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: start;
+            gap: 15px;
+        }
+
+        .contact-icon {
+            font-size: 24px;
+            margin-top: 5px;
+        }
+
+        .contact-item h4 {
+            color: #1a1a2e;
+            margin-bottom: 5px;
+        }
+
+        .contact-item a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: #d4af37;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #1a1a2e;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #d4af37;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .success-message {
+            display: none;
+            background: #4caf50;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: white;
+            padding: 30px 0 20px;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 15px 0;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #d4af37;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+                padding: 15px 0;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .badges {
+                flex-direction: column;
+            }
+
+            .badge {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">⚖ Kifa Rind</div>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                    <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                    <li><a href="#achievements" onclick="closeMenu()">Achievements</a></li>
+                    <li><a href="#why-choose" onclick="closeMenu()">Why Choose Us</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>We Fight For Your Justice</h1>
+            <p>Your Rights Matter. Your Voice Deserves To Be Heard.</p>
+            <a href="#contact" class="cta-button">Get Legal Help Now</a>
+            <a href="https://wa.me/923325595462" class="cta-button cta-secondary">Talk to a Lawyer on WhatsApp</a>
+        </div>
+    </section>
+
+    <section class="trust-badges">
+        <div class="container">
+            <div class="badges">
+                <div class="badge">
+                    <h3>10+</h3>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="badge">
+                    <h3>500+</h3>
+                    <p>Cases Resolved</p>
+                </div>
+                <div class="badge">
+                    <h3>98%</h3>
+                    <p>Client Satisfaction</p>
+                </div>
+                <div class="badge">
+                    <h3>24/7</h3>
+                    <p>Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Legal Services</h2>
+            <p class="section-subtitle">Comprehensive legal solutions tailored to protect your rights</p>
+            
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Criminal Defense</h3>
+                    <p>Aggressive defense strategies to protect your freedom and rights. We stand by you when it matters most.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Family Law</h3>
+                    <p>Compassionate guidance through divorce, custody, and family disputes. Your family's future deserves expert protection.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Civil Litigation</h3>
+                    <p>Strong representation in disputes, contracts, and property matters. We fight tirelessly for justice.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Business Law</h3>
+                    <p>Protecting your business interests with expert corporate legal counsel and compliance guidance.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Property Law</h3>
+                    <p>Expert handling of real estate transactions, disputes, and documentation. Your property rights are our priority.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Immigration Law</h3>
+                    <p>Navigate complex immigration processes with confidence. We help families reunite and achieve their dreams.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievements" id="achievements">
+        <div class="container">
+            <h2 class="section-title" style="color: #d4af37;">Notable Achievements & Cases</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">A proven track record of success</p>
+            
+            <div class="achievement-grid">
+                <div class="achievement-card">
+                    <h4>Major Fraud Case Victory</h4>
+                    <p>Successfully defended client in high-profile fraud case, resulting in complete acquittal.</p>
+                </div>
+                <div class="achievement-card">
+                    <h4>Record Property Settlement</h4>
+                    <p>Secured landmark property settlement worth PKR 50 million through strategic negotiation.</p>
+                </div>
+                <div class="achievement-card">
+                    <h4>Family Reunification Success</h4>
+                    <p>Helped over 100 families successfully navigate immigration processes.</p>
+                </div>
+                <div class="achievement-card">
+                    <h4>Corporate Legal Advisory</h4>
+                    <p>Served as legal counsel for multiple major companies operating in Pakistan.</p>
+                </div>
+                <div class="achievement-card">
+                    <h4>Constitutional Rights Victory</h4>
+                    <p>Won precedent-setting case defending fundamental rights at the High Court level.</p>
+                </div>
+                <div class="achievement-card">
+                    <h4>Child Custody Success</h4>
+                    <p>Achieved favorable outcomes in 95% of child custody cases prioritizing children's best interests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose" id="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Clients Trust Kifa Rind</h2>
+            <p class="section-subtitle">Experience the difference that dedication makes</p>
+            
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">⚖</div>
+                    <h3>Proven Track Record</h3>
+                    <p>Years of successful case outcomes speak for themselves. Your case deserves proven results.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">💼</div>
+                    <h3>Professional Excellence</h3>
+                    <p>Committed to the highest standards of legal practice and ethical conduct.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🤝</div>
+                    <h3>Client-Centered</h3>
+                    <p>Your concerns are our priority. We listen, understand, and craft tailored strategies.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">📞</div>
+                    <h3>Always Available</h3>
+                    <p>Legal emergencies don't wait. Reach us anytime you need legal guidance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get Legal Help Today</h2>
+            <p class="section-subtitle">Don't face legal challenges alone. Let us fight for your rights.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 style="color: #1a1a2e; margin-bottom: 25px;">Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Office Address</h4>
+                            <p>Clifton Block 2, Karachi</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:aminalibakish@gmail.com">aminalibakish@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h4>Phone / WhatsApp</h4>
+                            <a href="tel:+923325595462">+92 332 5595462</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon-Sat: 9 AM - 8 PM<br>Sunday: By Appointment<br><strong>Emergency: 24/7</strong></p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 25px;">
+                        <a href="https://wa.me/923325595462" class="cta-button" style="display: inline-block;">Chat on WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3 style="color: #1a1a2e; margin-bottom: 20px;">Describe Your Case</h3>
+                    <div class="success-message" id="successMessage">
+                        Thank you! We will contact you shortly.
+                    </div>
+                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="caseType">Type of Legal Issue</label>
+                            <input type="text" id="caseType" name="caseType" placeholder="e.g., Criminal Defense, Family Law" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Describe Your Case</label>
+                            <textarea id="message" name="message" placeholder="Please provide details about your legal situation..." required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button" style="width: 100%;">Book Free Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3 style="color: #d4af37; margin-
